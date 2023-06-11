@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Formulario de registro</h1>
+			
+	<div class="form__content">
+                
+		<form method="POST" action="formulario.php"  class="formulario" id="formulario">
+
+		
+			<!-- Grupo: Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="text" class="formulario__input" name="nombre" id="nombre" required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">Sólo puede contener letras y espacios.</p>
+			</div>
+
+            <!-- Grupo: Primer apellido -->
+			<div class="formulario__grupo" id="grupo__primerapellido">
+				<label for="primerapellido" class="formulario__label">Primer apellido</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="text" class="formulario__input" name="primerapellido" id="primerapellido"required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">Sólo puede contener letras y espacios.</p>
+			</div>
+
+            <!-- Grupo: Segundo apellido -->
+			<div class="formulario__grupo" id="grupo__segundoapellido">
+				<label for="segundoapellido" class="formulario__label">Segundo apellido</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="text" class="formulario__input" name="segundoapellido" id="segundoapellido"required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">Sólo puede contener letras y espacios.</p>
+			</div>
+
+			<!-- Grupo: Email -->
+			<div class="formulario__grupo" id="grupo__email">
+				<label for="email" class="formulario__label">Email</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="email" class="formulario__input" name="email" id="email"required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">El email solo puede contener números, letras y guion bajo.</p>
+			</div>
+
+            <!-- Grupo: login -->
+			<div class="formulario__grupo" id="grupo__login">
+				<label for="segundoapellido" class="formulario__label">Login</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="text" class="formulario__input" name="login" id="login"required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">El email solo puede contener números y letras.</p>
+			</div>
+
+			<!-- Grupo: Contraseña -->
+			<div class="formulario__grupo" id="grupo__password">
+				<label for="password" class="formulario__label">Clave</label>
+				<div class="formulario__grupo-input">
+					<input value="" type="password" class="formulario__input" name="password" id="password"required>
+					<img class="formulario__image" />
+				</div>
+				<p class="formulario__input-error">'Debe tener entre 4 y 8 caracteres.</p>
+			</div>
+
+			<div class="formulario__grupo-btn-enviar">
+				
+				<button type="submit" class="formulario__btn">ENVIAR</button>
+
+			</div>
+	
+        	<p><a href="consulta.php">Consulta</a></p>
+
+   		</form>
+	</div>
+
+	<script src="index.js"></script>
+	
+</body>
+</html>
